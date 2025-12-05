@@ -1,210 +1,1057 @@
 ---
-import astroLogo from '../assets/astro.svg';
-import background from '../assets/background.svg';
 ---
 
-<div id="container">
-	<img id="background" src={background.src} alt="" fetchpriority="high" />
-	<main>
-		<section id="hero">
-			<a href="https://astro.build"
-				><img src={astroLogo.src} width="115" height="48" alt="Astro Homepage" /></a
-			>
-			<h1>
-				To get started, open the <code><pre>src/pages</pre></code> directory in your project.
-			</h1>
-			<section id="links">
-				<a class="button" href="https://docs.astro.build">Read our docs</a>
-				<a href="https://astro.build/chat"
-					>Join our Discord <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 127.14 96.36"
-						><path
-							fill="currentColor"
-							d="M107.7 8.07A105.15 105.15 0 0 0 81.47 0a72.06 72.06 0 0 0-3.36 6.83 97.68 97.68 0 0 0-29.11 0A72.37 72.37 0 0 0 45.64 0a105.89 105.89 0 0 0-26.25 8.09C2.79 32.65-1.71 56.6.54 80.21a105.73 105.73 0 0 0 32.17 16.15 77.7 77.7 0 0 0 6.89-11.11 68.42 68.42 0 0 1-10.85-5.18c.91-.66 1.8-1.34 2.66-2a75.57 75.57 0 0 0 64.32 0c.87.71 1.76 1.39 2.66 2a68.68 68.68 0 0 1-10.87 5.19 77 77 0 0 0 6.89 11.1 105.25 105.25 0 0 0 32.19-16.14c2.64-27.38-4.51-51.11-18.9-72.15ZM42.45 65.69C36.18 65.69 31 60 31 53s5-12.74 11.43-12.74S54 46 53.89 53s-5.05 12.69-11.44 12.69Zm42.24 0C78.41 65.69 73.25 60 73.25 53s5-12.74 11.44-12.74S96.23 46 96.12 53s-5.04 12.69-11.43 12.69Z"
-						></path></svg
-					>
-				</a>
-			</section>
-		</section>
-	</main>
+<div class="page">
+	<div class="gridlines"></div>
+	<div class="noise"></div>
+	<div class="accent-strip accent-top"></div>
+	<div class="accent-strip accent-bottom"></div>
 
-	<a href="https://astro.build/blog/astro-5/" id="news" class="box">
-		<svg width="32" height="32" fill="none" xmlns="http://www.w3.org/2000/svg"
-			><path
-				d="M24.667 12c1.333 1.414 2 3.192 2 5.334 0 4.62-4.934 5.7-7.334 12C18.444 28.567 18 27.456 18 26c0-4.642 6.667-7.053 6.667-14Zm-5.334-5.333c1.6 1.65 2.4 3.43 2.4 5.333 0 6.602-8.06 7.59-6.4 17.334C13.111 27.787 12 25.564 12 22.666c0-4.434 7.333-8 7.333-16Zm-6-5.333C15.111 3.555 16 5.556 16 7.333c0 8.333-11.333 10.962-5.333 22-3.488-.774-6-4-6-8 0-8.667 8.666-10 8.666-20Z"
-				fill="#111827"></path></svg
-		>
-		<h2>What's New in Astro 5.0?</h2>
-		<p>
-			From content layers to server islands, click to learn more about the new features and
-			improvements in Astro 5.0
+	<header class="topbar snap">
+		<div class="topbar-accent"></div>
+		<div class="topbar-inner">
+			<div class="brand">
+				<div class="brand-mark"></div>
+				<div>
+					<div class="brand-title">Umair Exposé</div>
+					<div class="brand-sub">Chaptir Investigation Unit</div>
+				</div>
+			</div>
+			<nav class="nav">
+				<a href="#bukti">Bukti</a>
+				<a href="#reasons">10 Sebab</a>
+				<a href="#verdict">Verdict</a>
+			</nav>
+			<a class="btn primary small" href="#verdict">Confirm</a>
+		</div>
+	</header>
+
+	<section class="panel hero snap">
+		<div class="pill">SIASATAN RASMI — CONFIRMED</div>
+		<h1 class="headline glitch" data-text="Umair Wiss La Kau Chaptir ?">
+			Umair Wiss La Kau Chaptir ?
+		</h1>
+		<p class="lede">
+			Satu siasatan mendalam untuk menjawab soalan yang menghantu ramai. Bukti dikumpul, saksi ditemubual, dan keputusan telah dicapai. Tiada penafian — hanya kebenaran yang brutal.
 		</p>
-	</a>
+		<div class="cta-row">
+			<a class="btn primary" href="#reasons">Tengok 10 Sebab</a>
+			<a class="btn ghost" href="#bukti">Lihat Bukti</a>
+		</div>
+		<div class="meta-grid">
+			<div class="meta">
+				<span class="label">Tahap Chaptir</span>
+				<span class="value">99.99%</span>
+				<span class="note">Diukur berdasarkan pemerhatian harian.</span>
+			</div>
+			<div class="meta">
+				<span class="label">Kali Kena Roast</span>
+				<span class="value sky">∞</span>
+				<span class="note">Tak boleh dikira dah.</span>
+			</div>
+			<div class="meta">
+				<span class="label">Masa Reply</span>
+				<span class="value orange">3 hari</span>
+				<span class="note">Sebab busy "buat kerja".</span>
+			</div>
+		</div>
+	</section>
+
+	<div class="marquee-container snap">
+		<div class="marquee-track">
+			<span class="marquee-text">MAMA FIKIR MAMA HEBAT LA ?</span>
+			<span class="marquee-separator">//</span>
+			<span class="marquee-text">UMAIR CHAPTIR CONFIRMED</span>
+			<span class="marquee-separator">//</span>
+			<span class="marquee-text">MAMA FIKIR MAMA HEBAT LA ?</span>
+			<span class="marquee-separator">//</span>
+			<span class="marquee-text">UMAIR CHAPTIR CONFIRMED</span>
+			<span class="marquee-separator">//</span>
+			<span class="marquee-text">MAMA FIKIR MAMA HEBAT LA ?</span>
+			<span class="marquee-separator">//</span>
+			<span class="marquee-text">UMAIR CHAPTIR CONFIRMED</span>
+			<span class="marquee-separator">//</span>
+			<span class="marquee-text">MAMA FIKIR MAMA HEBAT LA ?</span>
+			<span class="marquee-separator">//</span>
+			<span class="marquee-text">UMAIR CHAPTIR CONFIRMED</span>
+			<span class="marquee-separator">//</span>
+		</div>
+	</div>
+
+	<section id="bukti" class="stack">
+		<div class="panel block snap">
+			<div class="block-header">
+				<span class="tag">BUKTI KUKUH</span>
+				<span class="tag subtle">Tak boleh dinafikan.</span>
+			</div>
+			<div class="columns">
+				<div class="cell">
+					<h3>Pemerhatian Harian</h3>
+					<p>
+						Data dikumpul dari pelbagai sumber yang dipercayai. Setiap tingkah laku dicatat dan dianalisa dengan teliti.
+					</p>
+					<ul class="list">
+						<li><span>Saksi mata</span><span class="pillline sky">Ramai</span></li>
+						<li><span>Screenshot bukti</span><span class="pillline">Ada</span></li>
+						<li><span>Tahap denial</span><span class="pillline orange">Maximum</span></li>
+					</ul>
+				</div>
+				<div class="cell">
+					<h3>Proses Siasatan</h3>
+					<p>
+						Siasatan dijalankan secara sistematik. Setiap bukti disahkan sebelum keputusan dibuat.
+					</p>
+					<div class="rail">
+						<div class="rail-segment active">
+							<span>Kumpul</span>
+							<strong>Bukti</strong>
+						</div>
+						<div class="rail-segment active">
+							<span>Analisa</span>
+							<strong>Data</strong>
+						</div>
+						<div class="rail-segment active sky">
+							<span>Sahkan</span>
+							<strong>Fakta</strong>
+						</div>
+						<div class="rail-segment orange">
+							<span>Verdict</span>
+							<strong>CHAPTIR</strong>
+						</div>
+					</div>
+					<p class="microcopy">Margin of error: 0.01% (basically confirm la)</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="panel stats-grid snap">
+			<div class="stat-card">
+				<span class="stat-label">Saksi yang setuju</span>
+				<span class="stat-value">100%</span>
+				<span class="stat-note">unanimous decision</span>
+			</div>
+			<div class="stat-card">
+				<span class="stat-label">Tahap Confident</span>
+				<span class="stat-value sky">MAX</span>
+				<span class="stat-note">tak boleh dispute</span>
+			</div>
+			<div class="stat-card">
+				<span class="stat-label">Kali deny</span>
+				<span class="stat-value">999+</span>
+				<span class="stat-note">tapi tetap chaptir</span>
+			</div>
+			<div class="stat-card">
+				<span class="stat-label">Final verdict</span>
+				<span class="stat-value orange">CHAPTIR</span>
+				<span class="stat-note">case closed</span>
+			</div>
+		</div>
+	</section>
+
+	<section id="reasons" class="panel timeline snap">
+		<div class="block-header">
+			<span class="tag">10 SEBAB UMAIR CHAPTIR</span>
+			<span class="tag subtle">Fakta. Bukan fitnah.</span>
+		</div>
+		<div class="steps">
+			<div class="step">
+				<div class="dot sky"></div>
+				<div class="step-body">
+					<span class="step-label">Sebab #1</span>
+					<h4>Selalu Perasan Handsome</h4>
+					<p>Padahal cermin pun dah give up nak reflect muka dia. Mirror crack every time.</p>
+				</div>
+			</div>
+			<div class="step">
+				<div class="dot orange"></div>
+				<div class="step-body">
+					<span class="step-label">Sebab #2</span>
+					<h4>Reply Message Macam Siput</h4>
+					<p>Hantar text pagi, dapat reply bulan depan. "Busy la bro" - busy main game je sebenarnya.</p>
+				</div>
+			</div>
+			<div class="step">
+				<div class="dot"></div>
+				<div class="step-body">
+					<span class="step-label">Sebab #3</span>
+					<h4>Joke Dia Tak Funny</h4>
+					<p>Buat lawak, senyap sepi macam kuburan. Cakap sendiri gelak sendiri.</p>
+				</div>
+			</div>
+			<div class="step">
+				<div class="dot sky"></div>
+				<div class="step-body">
+					<span class="step-label">Sebab #4</span>
+					<h4>Asyik Makan Free Je</h4>
+					<p>"Eh belanja la sikit" - ayat signature. Duit banyak tapi tangan pendek.</p>
+				</div>
+			</div>
+			<div class="step">
+				<div class="dot orange"></div>
+				<div class="step-body">
+					<span class="step-label">Sebab #5</span>
+					<h4>Janji Tak Pernah Tepati</h4>
+					<p>"Jap lagi aku sampai" means 2 jam lagi. Consistent dalam inconsistency.</p>
+				</div>
+			</div>
+			<div class="step">
+				<div class="dot"></div>
+				<div class="step-body">
+					<span class="step-label">Sebab #6</span>
+					<h4>Perasan Pro Gamer</h4>
+					<p>Padahal noob gila. Blame teammate je kerja, mirror check zero.</p>
+				</div>
+			</div>
+			<div class="step">
+				<div class="dot sky"></div>
+				<div class="step-body">
+					<span class="step-label">Sebab #7</span>
+					<h4>Suka Curi Spotlight</h4>
+					<p>Orang lain cerita, dia potong. Main character syndrome tahap dewa.</p>
+				</div>
+			</div>
+			<div class="step">
+				<div class="dot orange"></div>
+				<div class="step-body">
+					<span class="step-label">Sebab #8</span>
+					<h4>Tidur Macam Beruang</h4>
+					<p>Bangun pukul 2 petang, complain "penat sangat". Penat buat apa?</p>
+				</div>
+			</div>
+			<div class="step">
+				<div class="dot"></div>
+				<div class="step-body">
+					<span class="step-label">Sebab #9</span>
+					<h4>Excuse King</h4>
+					<p>Ada 1001 alasan untuk everything. Master dalam seni elak tanggungjawab.</p>
+				</div>
+			</div>
+			<div class="step">
+				<div class="dot sky"></div>
+				<div class="step-body">
+					<span class="step-label">Sebab #10</span>
+					<h4>Denial Tahap Maximum</h4>
+					<p>Baca semua ni pun masih cakap "aku tak chaptir la". Proof paling kukuh sekali.</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="verdict" class="panel cta snap">
+		<div>
+			<p class="eyebrow">VERDICT // FINAL DECISION</p>
+			<h2>Kesimpulan: Umair Memang Chaptir.</h2>
+			<p class="lede">
+				Selepas siasatan mendalam dengan 10 bukti kukuh, keputusan telah dicapai secara unanimous. Tiada ruang untuk rayuan. Case closed forever.
+			</p>
+		</div>
+		<div class="cta-actions">
+			<button class="btn primary wide">Setuju Umair Chaptir</button>
+			<button class="btn ghost wide">Share Kat Umair</button>
+		</div>
+	</section>
+
+	<footer class="footer snap">
+		<div class="footer-accent"></div>
+		<div class="footer-content">
+			<div class="footer-grid">
+				<div class="footer-block">
+					<div class="footer-label">Hotline Aduan</div>
+					<p class="footer-text">umair.chaptir@expose.my</p>
+					<p class="footer-text">1-800-CHAPTIR</p>
+				</div>
+				<div class="footer-block">
+					<div class="footer-label">Lokasi Siasatan</div>
+					<p class="footer-text">Bilik Interogasi, Level B</p>
+					<p class="footer-text">Somewhere in Malaysia</p>
+				</div>
+				<div class="footer-block">
+					<div class="footer-label">Navigation</div>
+					<div class="footer-links">
+						<a href="#bukti">Bukti</a>
+						<a href="#reasons">10 Sebab</a>
+						<a href="#verdict">Verdict</a>
+					</div>
+				</div>
+				<div class="footer-block">
+					<div class="footer-label">Disclaimer</div>
+					<p class="footer-text">Semua fakta adalah tepat. Umair tetap chaptir.</p>
+				</div>
+			</div>
+			<div class="footer-bar">
+				<span>Umair Chaptir Investigation Unit — Est. 2024</span>
+				<span class="pillline sky">CONFIRMED</span>
+			</div>
+		</div>
+	</footer>
 </div>
 
 <style>
-	#background {
-		position: fixed;
-		top: 0;
-		left: 0;
-		width: 100%;
-		height: 100%;
-		z-index: -1;
-		filter: blur(100px);
-	}
-
-	#container {
-		font-family: Inter, Roboto, 'Helvetica Neue', 'Arial Nova', 'Nimbus Sans', Arial, sans-serif;
-		height: 100%;
-	}
-
-	main {
-		height: 100%;
+	.page {
+		position: relative;
+		min-height: 100vh;
+		overflow: hidden;
+		padding: 64px clamp(20px, 4vw, 72px) 80px;
 		display: flex;
-		justify-content: center;
-	}
-
-	#hero {
-		display: flex;
-		align-items: start;
 		flex-direction: column;
-		justify-content: center;
-		padding: 16px;
+		gap: 28px;
 	}
 
-	h1 {
-		font-size: 22px;
-		margin-top: 0.25em;
+	.gridlines {
+		position: fixed;
+		inset: 0;
+		background-image: linear-gradient(
+				90deg,
+				rgba(255, 255, 255, 0.05) 1px,
+				transparent 1px
+			),
+			linear-gradient(180deg, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+		background-size: 120px 120px;
+		opacity: 0.45;
+		pointer-events: none;
+		mask-image: radial-gradient(circle at 50% 40%, rgba(0, 0, 0, 0.9), transparent 70%);
 	}
 
-	#links {
+	.noise {
+		position: fixed;
+		inset: 0;
+		pointer-events: none;
+		background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160' viewBox='0 0 160 160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.06'/%3E%3C/svg%3E");
+		mix-blend-mode: screen;
+		opacity: 0.6;
+	}
+
+	.topbar {
+		position: sticky;
+		top: 16px;
+		z-index: 2;
+		background: #0a0a0a;
+		border: 3px solid var(--platinum);
+		border-radius: var(--radius);
+		box-shadow: 12px 12px 0 0 #0c0c0c;
+		overflow: hidden;
+	}
+
+	.topbar-accent {
+		height: 6px;
+		background: linear-gradient(90deg, var(--sky), var(--orange));
+	}
+
+	.topbar-inner {
+		display: grid;
+		grid-template-columns: auto 1fr auto;
+		align-items: center;
+		gap: 16px;
+		padding: 12px 18px;
+	}
+
+	.brand {
+		display: grid;
+		grid-template-columns: auto 1fr;
+		gap: 10px;
+		align-items: center;
+	}
+
+	.brand-mark {
+		width: 32px;
+		height: 32px;
+		background: linear-gradient(135deg, var(--sky), var(--orange));
+		border: 2px solid var(--platinum);
+		box-shadow: 6px 6px 0 0 #0b0b0b;
+	}
+
+	.brand-title {
+		font-size: 15px;
+		text-transform: uppercase;
+		font-weight: 800;
+	}
+
+	.brand-sub {
+		font-size: 12px;
+		color: var(--platinum-muted);
+		letter-spacing: 0.08em;
+	}
+
+	.nav {
 		display: flex;
+		gap: 14px;
+		justify-content: center;
+	}
+
+	.nav a {
+		text-transform: uppercase;
+		font-weight: 700;
+		letter-spacing: 0.08em;
+		border-bottom: 2px solid transparent;
+		padding-bottom: 4px;
+	}
+
+	.nav a:hover {
+		border-color: var(--sky);
+	}
+
+	.accent-strip {
+		position: fixed;
+		left: 0;
+		right: 0;
+		height: 8px;
+		background: linear-gradient(90deg, var(--sky), var(--orange));
+		box-shadow: 0 0 0 2px #0d0d0d;
+		z-index: 1;
+	}
+
+	.accent-top {
+		top: 0;
+	}
+
+	.accent-bottom {
+		bottom: 0;
+	}
+
+	.panel {
+		background: var(--panel);
+		border: 2px solid var(--platinum);
+		border-radius: var(--radius);
+		padding: clamp(20px, 3vw, 32px);
+		box-shadow:
+			12px 12px 0 0 #0c0c0c,
+			inset 0 0 0 2px var(--panel-stroke);
+		position: relative;
+		overflow: hidden;
+	}
+
+	.panel::after {
+		content: '';
+		position: absolute;
+		inset: 0;
+		border: 1px solid rgba(255, 255, 255, 0.08);
+		pointer-events: none;
+	}
+
+	.hero {
+		display: flex;
+		flex-direction: column;
+		gap: 18px;
+	}
+
+	.pill {
+		display: inline-flex;
+		align-self: flex-start;
+		padding: 8px 14px;
+		border: 2px solid var(--platinum);
+		border-radius: 999px;
+		font-size: 12px;
+		letter-spacing: 0.12em;
+		background: #111;
+		text-transform: uppercase;
+	}
+
+	.headline {
+		font-size: clamp(32px, 5vw, 54px);
+		line-height: 1.05;
+		margin: 0;
+		text-transform: uppercase;
+		position: relative;
+		max-width: 980px;
+	}
+
+	.headline::before,
+	.headline::after {
+		content: attr(data-text);
+		position: absolute;
+		left: 0;
+		top: 0;
+		opacity: 0.28;
+		mix-blend-mode: screen;
+	}
+
+	.headline::before {
+		transform: translate(-2px, -2px);
+		color: var(--sky);
+		animation: glitch 3s infinite linear;
+	}
+
+	.headline::after {
+		transform: translate(2px, 2px);
+		color: var(--orange);
+		animation: glitch 2.4s infinite linear reverse;
+	}
+
+	.glitch {
+		animation: snap-in 0.5s ease-out 0.05s both;
+	}
+
+	.lede {
+		font-family: 'IBM Plex Mono', 'Space Mono', 'SFMono-Regular', Consolas, monospace;
+		color: var(--platinum);
+		max-width: 760px;
+		font-size: 16px;
+		margin: 0;
+		line-height: 1.6;
+	}
+
+	.cta-row {
+		display: flex;
+		gap: 12px;
+		flex-wrap: wrap;
+	}
+
+	.btn {
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+		gap: 8px;
+		padding: 14px 18px;
+		border: 2px solid var(--platinum);
+		border-radius: 6px;
+		font-weight: 700;
+		text-transform: uppercase;
+		letter-spacing: 0.06em;
+		background: #111;
+		color: var(--platinum);
+		text-decoration: none;
+		cursor: pointer;
+		transition: transform 0.12s ease, box-shadow 0.12s ease, background 0.12s ease;
+	}
+
+	.btn.primary {
+		background: linear-gradient(90deg, var(--sky), var(--orange));
+		color: #0b0b0b;
+		box-shadow: 6px 6px 0 0 #0b0b0b;
+	}
+
+	.btn.small {
+		padding: 10px 14px;
+		box-shadow: 4px 4px 0 0 #0b0b0b;
+	}
+
+	.btn.ghost {
+		background: transparent;
+	}
+
+	.btn:hover {
+		transform: translate(-2px, -2px);
+		box-shadow: 10px 10px 0 0 #0b0b0b;
+	}
+
+	.btn.primary:hover {
+		background: linear-gradient(90deg, var(--orange), var(--sky));
+	}
+
+	.meta-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+		gap: 12px;
+		margin-top: 12px;
+	}
+
+	.meta {
+		background: #0f0f0f;
+		border: 2px solid var(--platinum);
+		padding: 12px 14px;
+		display: grid;
+		gap: 4px;
+		border-radius: 8px;
+	}
+
+	.label {
+		font-size: 12px;
+		letter-spacing: 0.08em;
+		text-transform: uppercase;
+		color: var(--platinum-muted);
+	}
+
+	.value {
+		font-size: 26px;
+		font-weight: 800;
+		line-height: 1;
+	}
+
+	.value.sky {
+		color: var(--sky);
+	}
+
+	.value.orange {
+		color: var(--orange);
+	}
+
+	.note {
+		font-family: 'IBM Plex Mono', 'Space Mono', 'SFMono-Regular', Consolas, monospace;
+		color: var(--platinum-muted);
+		font-size: 12px;
+	}
+
+	.stack {
+		display: flex;
+		flex-direction: column;
 		gap: 16px;
 	}
 
-	#links a {
+	.block-header {
 		display: flex;
+		justify-content: space-between;
 		align-items: center;
+		gap: 8px;
+		margin-bottom: 12px;
+	}
+
+	.tag {
+		display: inline-flex;
+		align-items: center;
+		gap: 8px;
+		padding: 8px 12px;
+		border: 2px solid var(--platinum);
+		background: #0b0b0b;
+		font-size: 12px;
+		letter-spacing: 0.08em;
+		text-transform: uppercase;
+	}
+
+	.tag.subtle {
+		border-style: dashed;
+		opacity: 0.8;
+	}
+
+	.columns {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+		gap: 16px;
+	}
+
+	.cell h3 {
+		margin: 0 0 8px;
+		font-size: 22px;
+		text-transform: uppercase;
+	}
+
+	.cell p {
+		margin: 0 0 12px;
+		color: var(--platinum);
+		font-family: 'IBM Plex Mono', 'Space Mono', 'SFMono-Regular', Consolas, monospace;
+	}
+
+	.list {
+		list-style: none;
+		padding: 0;
+		margin: 0;
+		display: flex;
+		flex-direction: column;
+		gap: 10px;
+	}
+
+	.list li {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		border: 2px solid var(--platinum);
 		padding: 10px 12px;
-		color: #111827;
-		text-decoration: none;
-		transition: color 0.2s;
+		border-radius: 6px;
+		background: #0d0d0d;
 	}
 
-	#links a:hover {
-		color: rgb(78, 80, 86);
+	.pillline {
+		padding: 6px 10px;
+		border: 2px solid var(--platinum);
+		border-radius: 999px;
+		font-size: 12px;
+		text-transform: uppercase;
+		letter-spacing: 0.08em;
 	}
 
-	#links a svg {
-		height: 1em;
-		margin-left: 8px;
+	.pillline.sky {
+		border-color: var(--sky);
+		color: var(--sky);
 	}
 
-	#links a.button {
-		color: white;
-		background: linear-gradient(83.21deg, #3245ff 0%, #bc52ee 100%);
-		box-shadow:
-			inset 0 0 0 1px rgba(255, 255, 255, 0.12),
-			inset 0 -2px 0 rgba(0, 0, 0, 0.24);
-		border-radius: 10px;
+	.pillline.orange {
+		border-color: var(--orange);
+		color: var(--orange);
 	}
 
-	#links a.button:hover {
-		color: rgb(230, 230, 230);
-		box-shadow: none;
+	.rail {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+		gap: 10px;
+		margin-bottom: 8px;
 	}
 
-	pre {
-		font-family:
-			ui-monospace, 'Cascadia Code', 'Source Code Pro', Menlo, Consolas, 'DejaVu Sans Mono',
-			monospace;
-		font-weight: normal;
-		background: linear-gradient(14deg, #d83333 0%, #f041ff 100%);
-		-webkit-background-clip: text;
-		-webkit-text-fill-color: transparent;
-		background-clip: text;
+	.rail-segment {
+		border: 2px solid var(--platinum);
+		padding: 12px 10px;
+		background: #0d0d0d;
+		display: grid;
+		gap: 6px;
+		text-transform: uppercase;
+		font-size: 12px;
+		letter-spacing: 0.08em;
+	}
+
+	.rail-segment strong {
+		font-size: 18px;
+	}
+
+	.rail-segment.active {
+		background: linear-gradient(135deg, rgba(79, 193, 233, 0.15), rgba(255, 255, 255, 0));
+	}
+
+	.rail-segment.sky {
+		border-color: var(--sky);
+		color: var(--sky);
+	}
+
+	.rail-segment.orange {
+		border-color: var(--orange);
+		color: var(--orange);
+	}
+
+	.microcopy {
 		margin: 0;
+		font-size: 12px;
+		color: var(--platinum-muted);
+		font-family: 'IBM Plex Mono', 'Space Mono', 'SFMono-Regular', Consolas, monospace;
+		text-transform: uppercase;
+		letter-spacing: 0.08em;
 	}
 
-	h2 {
-		margin: 0 0 1em;
-		font-weight: normal;
-		color: #111827;
-		font-size: 20px;
+	.stats-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+		gap: 12px;
 	}
 
-	p {
-		color: #4b5563;
-		font-size: 16px;
-		line-height: 24px;
-		letter-spacing: -0.006em;
-		margin: 0;
+	.stat-card {
+		border: 2px solid var(--platinum);
+		padding: 14px;
+		background: #0d0d0d;
+		display: grid;
+		gap: 6px;
+		border-radius: 6px;
+		box-shadow: 6px 6px 0 0 #0b0b0b;
 	}
 
-	code {
-		display: inline-block;
-		background:
-			linear-gradient(66.77deg, #f3cddd 0%, #f5cee7 100%) padding-box,
-			linear-gradient(155deg, #d83333 0%, #f041ff 18%, #f5cee7 45%) border-box;
+	.stat-label {
+		letter-spacing: 0.08em;
+		font-size: 12px;
+		text-transform: uppercase;
+		color: var(--platinum-muted);
+	}
+
+	.stat-value {
+		font-size: 32px;
+		font-weight: 800;
+		line-height: 1;
+	}
+
+	.stat-value.sky {
+		color: var(--sky);
+	}
+
+	.stat-value.orange {
+		color: var(--orange);
+	}
+
+	.stat-note {
+		font-family: 'IBM Plex Mono', 'Space Mono', 'SFMono-Regular', Consolas, monospace;
+		color: var(--platinum-muted);
+		font-size: 12px;
+	}
+
+	.timeline .steps {
+		display: grid;
+		gap: 16px;
+	}
+
+	.step {
+		display: grid;
+		grid-template-columns: auto 1fr;
+		gap: 12px;
+		align-items: start;
+		background: #0d0d0d;
+		border: 2px solid var(--platinum);
 		border-radius: 8px;
-		border: 1px solid transparent;
-		padding: 6px 8px;
+		padding: 12px 14px;
+		box-shadow: 6px 6px 0 0 #0b0b0b;
 	}
 
-	.box {
-		padding: 16px;
-		background: rgba(255, 255, 255, 1);
-		border-radius: 16px;
-		border: 1px solid white;
+	.dot {
+		width: 16px;
+		height: 16px;
+		border-radius: 4px;
+		border: 2px solid var(--platinum);
+		background: #0b0b0b;
+		margin-top: 6px;
 	}
 
-	#news {
-		position: absolute;
-		bottom: 16px;
-		right: 16px;
-		max-width: 300px;
-		text-decoration: none;
-		transition: background 0.2s;
-		backdrop-filter: blur(50px);
+	.dot.sky {
+		background: var(--sky);
+		box-shadow: 0 0 12px rgba(79, 193, 233, 0.7);
 	}
 
-	#news:hover {
-		background: rgba(255, 255, 255, 0.55);
+	.dot.orange {
+		background: var(--orange);
+		box-shadow: 0 0 12px rgba(255, 109, 63, 0.7);
 	}
 
-	@media screen and (max-height: 368px) {
-		#news {
-			display: none;
+	.step-body h4 {
+		margin: 6px 0 6px;
+		text-transform: uppercase;
+		letter-spacing: 0.04em;
+	}
+
+	.step-body p {
+		margin: 0;
+		font-family: 'IBM Plex Mono', 'Space Mono', 'SFMono-Regular', Consolas, monospace;
+		color: var(--platinum);
+	}
+
+	.step-label {
+		font-size: 12px;
+		letter-spacing: 0.08em;
+		text-transform: uppercase;
+		color: var(--platinum-muted);
+	}
+
+	.cta {
+		display: grid;
+		grid-template-columns: 1fr;
+		gap: 12px;
+		align-items: center;
+	}
+
+	.eyebrow {
+		margin: 0;
+		font-size: 12px;
+		letter-spacing: 0.12em;
+		text-transform: uppercase;
+		color: var(--platinum-muted);
+	}
+
+	.cta h2 {
+		margin: 8px 0 6px;
+		font-size: clamp(26px, 3.4vw, 36px);
+		text-transform: uppercase;
+	}
+
+	.cta-actions {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+		gap: 10px;
+	}
+
+	.btn.wide {
+		width: 100%;
+	}
+
+	.snap {
+		animation: snap-in 0.5s ease-out both;
+	}
+
+	@keyframes snap-in {
+		from {
+			opacity: 0;
+			transform: translateY(16px);
+		}
+		to {
+			opacity: 1;
+			transform: translateY(0);
 		}
 	}
 
-	@media screen and (max-width: 768px) {
-		#container {
-			display: flex;
-			flex-direction: column;
+	@keyframes glitch {
+		0% {
+			clip-path: inset(0 0 80% 0);
+		}
+		20% {
+			clip-path: inset(20% 0 60% 0);
+		}
+		40% {
+			clip-path: inset(10% 0 50% 0);
+		}
+		60% {
+			clip-path: inset(30% 0 20% 0);
+		}
+		80% {
+			clip-path: inset(5% 0 40% 0);
+		}
+		100% {
+			clip-path: inset(0 0 80% 0);
+		}
+	}
+
+	@media (max-width: 768px) {
+		.page {
+			padding: 40px 16px 64px;
 		}
 
-		#hero {
-			display: block;
-			padding-top: 10%;
+		.topbar {
+			position: relative;
+			top: 0;
 		}
 
-		#links {
+		.topbar-inner {
+			grid-template-columns: 1fr;
+			gap: 12px;
+		}
+
+		.nav {
+			justify-content: flex-start;
 			flex-wrap: wrap;
 		}
 
-		#links a.button {
-			padding: 14px 18px;
+		.block-header {
+			flex-direction: column;
+			align-items: flex-start;
 		}
 
-		#news {
-			right: 16px;
-			left: 16px;
-			bottom: 2.5rem;
-			max-width: 100%;
+		.cta {
+			grid-template-columns: 1fr;
 		}
 
-		h1 {
-			line-height: 1.5;
+		.panel {
+			box-shadow:
+				8px 8px 0 0 #0c0c0c,
+				inset 0 0 0 2px var(--panel-stroke);
 		}
+
+		.marquee-container {
+			box-shadow: 6px 6px 0 0 #0c0c0c;
+		}
+	}
+
+	.footer {
+		background: #0a0a0a;
+		border: 3px solid var(--platinum);
+		border-radius: var(--radius);
+		box-shadow: 12px 12px 0 0 #0c0c0c;
+		overflow: hidden;
+	}
+
+	.footer-accent {
+		height: 6px;
+		background: linear-gradient(90deg, var(--orange), var(--sky));
+	}
+
+	.footer-content {
+		padding: clamp(20px, 3vw, 32px);
+		display: grid;
+		gap: 18px;
+	}
+
+	.footer-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+		gap: 18px;
+	}
+
+	.footer-block {
+		display: grid;
+		gap: 8px;
+		padding: 14px;
+		background: #0d0d0d;
+		border: 2px solid var(--panel-stroke);
+		border-radius: 6px;
+	}
+
+	.footer-label {
+		font-size: 12px;
+		letter-spacing: 0.12em;
+		text-transform: uppercase;
+		color: var(--sky);
+		font-weight: 700;
+	}
+
+	.footer-text {
+		margin: 0;
+		color: var(--platinum);
+		font-family: 'IBM Plex Mono', 'Space Mono', 'SFMono-Regular', Consolas, monospace;
+		font-size: 14px;
+	}
+
+	.footer-links {
+		display: flex;
+		gap: 12px;
+		flex-wrap: wrap;
+	}
+
+	.footer-links a {
+		text-transform: uppercase;
+		letter-spacing: 0.08em;
+		font-weight: 700;
+		padding: 6px 10px;
+		border: 2px solid var(--panel-stroke);
+		border-radius: 4px;
+		transition: all 0.15s ease;
+	}
+
+	.footer-links a:hover {
+		border-color: var(--orange);
+		color: var(--orange);
+	}
+
+	.footer-bar {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		border-top: 3px solid var(--platinum);
+		padding-top: 14px;
+		gap: 10px;
+		text-transform: uppercase;
+		font-weight: 700;
+		letter-spacing: 0.06em;
+	}
+
+	@media (max-width: 540px) {
+		.footer-bar {
+			flex-direction: column;
+			align-items: flex-start;
+		}
+	}
+
+	/* Marquee styles */
+	.marquee-container {
+		width: 100%;
+		overflow: hidden;
+		background: #0a0a0a;
+		border: 3px solid var(--platinum);
+		border-radius: var(--radius);
+		box-shadow: 8px 8px 0 0 #0c0c0c;
+		padding: 16px 0;
+	}
+
+	.marquee-track {
+		display: flex;
+		gap: 24px;
+		white-space: nowrap;
+		animation: marquee 20s linear infinite;
+	}
+
+	.marquee-text {
+		font-size: clamp(24px, 4vw, 42px);
+		font-weight: 800;
+		text-transform: uppercase;
+		letter-spacing: 0.08em;
+		background: linear-gradient(90deg, var(--platinum), var(--sky));
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		background-clip: text;
+	}
+
+	.marquee-separator {
+		font-size: clamp(24px, 4vw, 42px);
+		font-weight: 800;
+		color: var(--orange);
+	}
+
+	@keyframes marquee {
+		0% {
+			transform: translateX(0);
+		}
+		100% {
+			transform: translateX(-50%);
+		}
+	}
+
+	.marquee-container:hover .marquee-track {
+		animation-play-state: paused;
 	}
 </style>
